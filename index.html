@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://media.licdn.com/dms/image/v2/C4E0BAQEtv0wUkm1BeA/company-logo_200_200/company-logo_200_200/0/1630640859579/diario_la_capital_logo?e=2147483647&v=beta&t=rbBEq00ylb07pDAXhy9OH_A1zkd4G6HQKGIsqnXhSbY">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>LA CAPITAL</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -32,7 +33,11 @@
                 <a href="https://www.lacapital.com.ar/secciones/turismo.html">Turismo</a>
             </li>
         </ul>
-    <h1 id="logo-principal">LA CAPITAL</h1>
+
+        <div class="logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Logo_de_La_Capital_de_Rosario.svg/1280px-Logo_de_La_Capital_de_Rosario.svg.png" alt="LA CAPITAL">
+        </div>
+
         <ul class="nav-principal">
             <li>
                 <a href="https://www.lacapital.com.ar/secciones/ultimo-momento.html">Últimas Noticias</a>
@@ -66,28 +71,96 @@
 
 
     <main>
-        <article class="tarjeta-noticia" id="noticia-principal">
-            <h2>El consumo de los rosarinos en comercios de cercanía y supermercados sigue en caída libre</h2>
-            <p>Desde el Centro de Unión Almaceneros y la Cámara de Supermercadistas de Rosario trazaron un panorama alarmante por el amesetamiento de ventas</p>
-            <img src="https://media.lacapital.com.ar/p/6156ebf594c06b7ccb6857c4ed10ed64/adjuntos/203/imagenes/020/978/0020978430/642x0/smart/almacenjpg.jpg" alt="Imagen">
-            <p>Por Matias Petisce</p>
-        </article>
-
-        <aside id="noticias-laterales">
-            <article class="tarjeta-noticia secundaria">
-                <h2>Central: de los goles de Veliz a los de Copetti, la buena señal de que los 9 estén en racha</h2>
-                <p>Los últimos cuatro gritos del Canalla fueron de sus centrodelanteros. En el certamen continental el equipo generó mucho más de lo que convirtió</p>
-                <img src="https://media.lacapital.com.ar/p/09f13dfd8faac602049ec866ee70dbb4/adjuntos/203/imagenes/103/094/0103094907/2026-04-15-82221278.jpg" alt="Imagen">
-                <p>Elbio Evangeliste</p>
+        <div class="fila-superior">
+            <article class="tarjeta-noticia-principal">
+                <h2>El consumo de los rosarinos en comercios de cercanía y supermercados sigue en caída libre</h2>
+                <p>Desde el Centro de Unión Almaceneros y la Cámara de Supermercadistas de Rosario trazaron un panorama alarmante por el amesetamiento de ventas</p>
+                <img src="https://media.lacapital.com.ar/p/6156ebf594c06b7ccb6857c4ed10ed64/adjuntos/203/imagenes/020/978/0020978430/642x0/smart/almacenjpg.jpg" alt="Imagen">
+                <p>Por Matias Petisce</p>
             </article>
 
+            <aside id="noticias-laterales">
+                <article class="tarjeta-noticia secundaria">
+                    <h3>Central: de los goles de Veliz a los de Copetti, la buena señal de que los 9 estén en racha</h3>
+                    <img src="https://media.lacapital.com.ar/p/09f13dfd8faac602049ec866ee70dbb4/adjuntos/203/imagenes/103/094/0103094907/2026-04-15-82221278.jpg" alt="Imagen">
+                    <p>Elbio Evangeliste</p>
+                </article>
 
-            <article class="tarjeta-noticia secundaria">
-                <h2>Puente Rosario-Victoria: desde hoy en el peaje habrá dos formas de pago, ninguna con efectivo</h2>
-                <p>La concesionaria activa el nuevo sistema sin cabinas en la ruta 174. Plantean dos modalidades de pago y tarifas diferenciadas según el método</p>
-                <img src="https://media.lacapital.com.ar/p/8de224e60f8f39c8b5a2ff96d4dda235/adjuntos/203/imagenes/102/273/0102273160/puente-rosario-victoriajpeg.jpeg" alt="Imagen">
+
+                <article class="tarjeta-noticia secundaria">
+                    <h3>Puente Rosario-Victoria: desde hoy en el peaje habrá dos formas de pago, ninguna con efectivo</h3>
+                    <img src="https://media.lacapital.com.ar/p/8de224e60f8f39c8b5a2ff96d4dda235/adjuntos/203/imagenes/102/273/0102273160/puente-rosario-victoriajpeg.jpeg" alt="Imagen">
+                </article>
+            </aside> 
+        </div>
+
+        <div class="fila-inferior">
+            <article class="tarjeta-noticia">
+                <h2>Hotel Sol de Funes: Vialidad diferenció las mejoras en la colectora del acceso "temerario" a la autopista</h2>
+                <img src="https://media.lacapital.com.ar/p/d1011304f83e5336407edaf91ee65c4a/adjuntos/203/imagenes/103/180/0103180013/642x0/smart/funes.jpg" alt="Imagen">
+                <p>LA REGIÓN</p>
             </article>
-        </aside>
+
+            <article class="tarjeta-noticia">
+                <h2>Rosario, capital de la cardiología: más de 5.000 especialistas llegan para un congreso internacional</h2>
+                <img src="https://media.lacapital.com.ar/p/05a36163d2f65cdcd2c6f6b700bdff29/adjuntos/203/imagenes/103/179/0103179818/642x0/smart/cardiologia-275.jpg" alt="Imagen">
+                <p>SALUD</p>
+            </article>
+
+            
+            <article class="tarjeta-noticia">
+                <h2>Los hinchas de Central una vez más desafiaron las distancias y armaron su propia fiesta en Ecuador</h2>
+                <img src="https://media.lacapital.com.ar/p/1241d40ce6fa5e2c2297d4bdd7c3dd1d/adjuntos/203/imagenes/103/180/0103180306/642x0/smart/image-30.jpg" alt="Imagen">
+                <p>OVACIÓN</p>
+            </article>
+
     </main>
 </body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-top">
+
+        <div class="footer-logo-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Logo_de_La_Capital_de_Rosario.svg/1280px-Logo_de_La_Capital_de_Rosario.svg.png" alt="LA CAPITAL">
+        </div>
+
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="https://www.lacapital.com.ar/">Diario La Capital</a></li>
+                    <li><a href="https://www.unosantafe.com.ar/">Diario Uno Santa Fe</a></li>
+                    <li><a href="https://www.unoentrerios.com.ar/">Diario Uno Entre Rios</a></li>
+                    <li><a href="https://www.agroclave.com.ar/">Agroclave</a></li>
+                    <li><a href="https://infocomercial.lacapital.com.ar/">infoComercial</a></li>
+                    <li><a href="https://www.metropolipublicidad.ar/">Metrópoli Vía Pública</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.lt8.com.ar/">La Ocho AM830</a></li>
+                    <li><a href="http://www.laredrosario.com/">La Red Rosario FM 98.3</a></li>
+                    <li><a href="https://lt15concordia.com.ar/">LT15 Concordia AM 560</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.delsiglo.com.ar/">Del Siglo FM 99.5</a></li>
+                    <li><a href="https://www.metropolipublicidad.ar/">Metrópoli Vía Pública</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="copyright">
+                <p>© La Capital Multimedios</p>
+            </div>
+            
+            <div class="redes-sociales">
+                <span>Seguinos</span>
+                    <a href="https://www.facebook.com/DiarioLaCapital"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://x.com/lacapital"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/diariolacapital/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/c/DiarioLaCapitalRos"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://news.google.com/publications/CAAqLAgKIiZDQklTRmdnTWFoSUtFR3hoWTJGd2FYUmhiQzVqYjIwdVlYSW9BQVAB?hl=es-419&gl=AR&ceid=AR%3Aes-419"><i class="fa-brands fa-google"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
 </html>
