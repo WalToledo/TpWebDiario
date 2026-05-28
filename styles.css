@@ -24,14 +24,12 @@ body {
     text-transform: uppercase;
 }
 
-/* NUEVO: Contenedor medio para centrar logo y ocultar hamburguesa en PC */
 .header-medio {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* NUEVO: Hamburguesa oculta por defecto */
 .menu-hamburguesa {
     display: none;
     font-size: 30px;
@@ -39,7 +37,6 @@ body {
     padding: 10px 20px;
 }
 
-/* NUEVO: Estilo de la fecha */
 .fecha-diario {
     font-family: Arial, sans-serif;
     font-size: 12px;
@@ -263,23 +260,19 @@ footer{
         display: none;
     }
 
-    /* NUEVO: Alineamos el contenedor medio para que la hamburguesa quede a la izquierda */
     .header-medio {
         justify-content: flex-start;
     }
 
-    /* NUEVO: Mostramos la hamburguesa */
     .menu-hamburguesa {
         display: block;
     }
 
-    /* NUEVO: El logo ocupa el espacio restante y compensa el margen para verse centrado */
     .logo-container {
         flex-grow: 1;
         padding-right: 60px; 
     }
 
-    /* MODIFICADO: Cumplimos con la consigna ocultando el menú principal en celular */
     .nav-principal {
         display: none;
     }
