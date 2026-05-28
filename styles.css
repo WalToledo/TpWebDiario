@@ -24,6 +24,29 @@ body {
     text-transform: uppercase;
 }
 
+/* NUEVO: Contenedor medio para centrar logo y ocultar hamburguesa en PC */
+.header-medio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NUEVO: Hamburguesa oculta por defecto */
+.menu-hamburguesa {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+/* NUEVO: Estilo de la fecha */
+.fecha-diario {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+}
+
 .logo-container {
     text-align: center;
     padding: 20px 0;
@@ -52,6 +75,7 @@ body {
     font-weight: bold;
     font-size: 15px;
 }
+
 main {
     max-width: 1200px;
     margin: 40px auto;
@@ -232,21 +256,32 @@ footer{
     .fila-superior, 
     .fila-inferior,
     #noticias-laterales {
-    flex-direction: column;
+        flex-direction: column;
     }
 
     #menu-servicios {
         display: none;
     }
 
+    /* NUEVO: Alineamos el contenedor medio para que la hamburguesa quede a la izquierda */
+    .header-medio {
+        justify-content: flex-start;
+    }
+
+    /* NUEVO: Mostramos la hamburguesa */
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    /* NUEVO: El logo ocupa el espacio restante y compensa el margen para verse centrado */
+    .logo-container {
+        flex-grow: 1;
+        padding-right: 60px; 
+    }
+
+    /* MODIFICADO: Cumplimos con la consigna ocultando el menú principal en celular */
     .nav-principal {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        white-space: nowrap;
-        padding: 10px;
+        display: none;
     }
 
     .logo-container img {
