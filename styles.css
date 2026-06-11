@@ -308,3 +308,16 @@ footer{
     .fila-inferior .tarjeta-noticia img {
         height: 300px;
     }
+
+.btn-ingresar {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}

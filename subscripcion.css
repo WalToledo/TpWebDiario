@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+.formIngresar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.formIngresar label {
+    font-weight: bold;
+}
+
+.formIngresar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.formIngresar button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.error-msg {
+    color: red;
+    font-size: 12px;
+    display: none; 
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+
+.input-error {
+    border: 2px solid red !important;
+    outline: none;
+}
