@@ -9,6 +9,16 @@ var validarCampos = function(input){
         mensajeError = 'El campo es obligatorio.';
         } else{
             switch(input.id){
+                case 'username':
+                    var tieneEspacio = valor.includes(' ');
+
+                    if(valor.length < 6){
+                        mensajeError = 'El nombre debe tener por lo menos 6 letras'
+                    }else if(tieneEspacio == false){
+                        mensajeError = 'El nombre debe tener un espacio en medio'
+                    }
+                    break;
+                
                 case 'email':
                     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                     if (!emailRegex.test(valor)) {
@@ -38,6 +48,36 @@ var validarCampos = function(input){
                 case 'phone':
                     if(valor.length < 7){
                         mensajeError = 'El numero debe tener por lo menos 7 digitos.'
+                    }
+                    break;
+
+                case 'address':
+                    var tieneLetras = /[a-zA-ZáéíóúÁÉÍÓÚñÑ]/.test(valor);
+                    var tieneNumeros = /[0-9]/.test(valor);
+                    var tieneEspacio = valor.includes(' ');
+
+                    if (valor.length < 5) {
+                        mensajeError = 'La dirección debe tener al menos 5 caracteres.';
+                    } else if (tieneLetras === false || tieneNumeros === false || tieneEspacio === false) {
+                        mensajeError = 'La dirección debe contener letras, números y un espacio.';
+                    }
+                    break;
+
+                case 'city':
+                    if(valor.length < 3){
+                        mensajeError = 'Debe tener al menos 3 caracteres'
+                    }
+                    break;
+
+                case 'postal-code':
+                    if(valor.length < 3){
+                        mensajeError = 'Debe tener al menos 3 caracteres'
+                    }
+                    break;
+
+                case 'dni':
+                    if(valor.length < 7 || valor.length > 8){
+                        mensajeError = 'El numero debe tener 7 u 8 digitos'
                     }
                     break;
             }
