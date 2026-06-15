@@ -97,21 +97,42 @@ var validarCampos = function(input){
     }
 }
 
+for(var i = 0; i < inputs.length; i++){
+    var inputActual = inputs[i];
+
+    inputActual.addEventListener('blur', function(evento){
+        validarCampos(evento.target);
+    })
+
+    inputActual.addEventListener('focus', function(evento){
+        var spanError = document.getElementById('error-' + evento.target.id);
+        spanError.style.display = 'none';
+        evento.target.classList.remove('input-error');
+    })
+}
+
 formulario.addEventListener('submit', function(evento){
     evento.preventDefault();
 
     var formularioValido = true;
+    var textoDeErrores = '';
+    var textoDeDatos = '';
 
     for(var i = 0; i < inputs.length; i++){
+        var inputActual = inputs[i];
         var esValido = validarCampos(inputs[i]);
     
         if(esValido === false){
             formularioValido = false;
+            var errorDelHTML = document.getElementById('error-' + inputActual.id).textContent;
+            textoDeErrores = textoDeErrores + `${inputActual.id}: ${errorDelHTML}\n`;
+        }else{
+            textoDeDatos = textoDeDatos + `${inputActual.id}: ${inputActual.value}\n`;
         }
     }
     if(formularioValido === false){
-        alert('Error en el formulario.')
+        alert('El formulario tiene los siguientes errores:\n\n' + textoDeErrores);
     }else{
-        alert('Formulario enviado con éxito')
+        alert('Formulario enviado con éxito. Datos:\n\n' + textoDeDatos);
     }
 });
